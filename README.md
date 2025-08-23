@@ -1,2 +1,2 @@
-# WebProject
-Golfing Webpage which markets the Golf Exercise to internal students and external people which may be interested to join
+# Golf Webpage
+Our Golf Exercise program is designed to introduce and engage both students and external participants in the sport of golf. Whether you’re looking to develop new skills, improve your game, or simply enjoy an active and social experience, this program offers a welcoming environment for all levels. Join us to discover the fun and benefits of golf, while connecting with others who share the same interest.
