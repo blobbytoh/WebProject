@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - NYP Golf</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../CSS/events.css">
+    <link rel="Icon" href="../Pictures/logo.png">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css"
+        integrity="sha512-v8QQ0YQ3H4K6Ic3PJkym91KoeNT5S3PnDKvqnwqFD1oiqIl653crGZplPdU5KKtHjO0QKcQ2aUlQZYjHczkmGw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="funnel-sans">
+    <div id="preloader"></div>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img class="logo-image" src="../Pictures/Screenshot 2025-07-07 152602.png" alt="NYP logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav fs-5 ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="event.html">EVENTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="admission.html">ADMISSION</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fixed Carousel-->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active slide1">
+            <img src="../Pictures/swing.jpg" class="d-block w-100" alt="Golf swing">
+            <div class="carousel-caption">
+                <h1>Golf Events</h1>
+                <p>Join us for exciting competitions, training sessions, and unforgettable experiences</p>
+            </div>
+        </div>
+        <div class="carousel-item slide2">
+            <img src="../Pictures/golfball.jpg" class="d-block w-100" alt="Golf ball on grass">
+            <div class="carousel-caption">
+                <h1>Professional Training</h1>
+                <p>Enhance your skills with our expert coaches and state-of-the-art facilities</p>
+            </div>
+        </div>
+        <div class="carousel-item slide3">
+           <img src="../Pictures/grass.jpg" class="d-block w-100" alt="pass with ball">
+            <div class="carousel-caption">
+                <h1>Overseas Experience</h1>
+                <p>Explore world-class golf courses and compete internationally</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+    <!-- Events Content -->
+    <div class="container-fluid p-0">
+        <div class="events-section" id="events-content">
+            <div class="content-header">
+                <h1 class="fw-bold">Our Events</h1>
+                <p class="lead">Discover the exciting events and activities that make NYP Golf Club exceptional</p>
+            </div>
+
+            <!-- Competitions Section -->
+            <div class="event-category" id="competitions">
+                <div class="container">
+                    <div class="category-header">
+                        <i class="fa-solid fa-trophy fa-3x"></i>
+                        <h2>Competitions</h2>
+                        <p>Challenge yourself in our competitive tournaments and championships</p>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="event-card">
+                                <img src="../Pictures/competition 1.jpeg" alt="Poly comp">
+                                <div class="event-content">
+                                    <h4>Inter-Polytechnic Championship</h4>
+                                    <p class="event-date"><i class="fa-solid fa-calendar"></i> March 15-17, 2025</p>
+                                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> Sentosa Golf Club</p>
+                                    <p>Annual competition inviting the best golfers from every polytechnics in Singapore competing to be the best.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="event-card">
+                                <img src="../Pictures/competition 2.jpeg" alt="NYP comp">
+                                <div class="event-content">
+                                    <h4>NYP Golf Club Championship</h4>
+                                    <p class="event-date"><i class="fa-solid fa-calendar"></i> April 20-22, 2025</p>
+                                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> Tanah Merah Country Club</p>
+                                    <p>Our annual club championship where members compete for the coveted club champion title across different skill levels.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="event-card">
+                                <img src="../Pictures/competition 3.jpeg" alt="Freshman Tournament">
+                                <div class="event-content">
+                                    <h4>Freshmen Welcome Tournament</h4>
+                                    <p class="event-date"><i class="fa-solid fa-calendar"></i> August 10, 2025</p>
+                                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> Marina Bay Golf Course</p>
+                                    <p>A friendly tournament designed for new members to experience competitive golf and meet fellow club members.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Overseas Experience Section -->
+            <div class="event-category overseas-section" id="overseas">
+                <div class="container">
+                    <div class="category-header">
+                        <i class="fa-solid fa-plane fa-3x"></i>
+                        <h2>Overseas Experience</h2>
+                        <p>Broaden your horizons with international golf experiences and cultural exchange</p>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="event-card">
+                                <img src="../Pictures/experience 1.jpeg" alt="Malaysia Golf Tour">
+                                <div class="event-content">
+                                    <h4>Malaysia Golf Tour</h4>
+                                    <p class="event-date"><i class="fa-solid fa-calendar"></i> June 5-8, 2025</p>
+                                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> Kuala Lumpur, Malaysia</p>
+                                    <p>Experience world-class golf courses in Malaysia while building friendships and creating unforgettable lasting memories together.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="event-card">
+                                <img src="../Pictures/experience 2.jpeg" alt="Thailand Golf Exchange">
+                                <div class="event-content">
+                                    <h4>Thailand Golf Exchange Program</h4>
+                                    <p class="event-date"><i class="fa-solid fa-calendar"></i> September 12-16, 2025</p>
+                                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> Bangkok, Thailand</p>
+                                    <p>Cultural exchange with Thailand golf clubs, featuring fun and friendly matches and cultural exchange activities.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="event-card">
+                                <img src="../Pictures/experience 3.jpeg" alt="Australia Golf Training Camp">
+                                <div class="event-content">
+                                    <h4>Australia Golf Training Camp</h4>
+                                    <p class="event-date"><i class="fa-solid fa-calendar"></i> November 20-27, 2025</p>
+                                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> Gold Coast, Australia</p>
+                                    <p>Intensive training camp at premium Australian golf facilities with professional coaching and competitive play.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- Training Section -->
+            <div class="event-category" id="training">
+                <div class="container">
+                    <div class="category-header">
+                        <i class="fa-solid fa-dumbbell fa-3x"></i>
+                        <h2>Training</h2>
+                        <p>Develop your skills with our comprehensive training programs</p>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="event-card">
+                                <img src="../Pictures/training 1.jpeg" alt="technical skills development">
+                                <div class="event-content">
+                                    <h4>Technical Skills Development</h4>
+                                    <p class="event-date"><i class="fa-solid fa-calendar"></i> Every Tuesday & Thursday</p>
+                                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> NYP Golf Simulator Room</p>
+                                    <p>Focused training sessions on swing mechanics, putting techniques, and on-course management strategies.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="event-card">
+                                <img src="../Pictures/training 2.jpeg" alt="mental game workshop">
+                                <div class="event-content">
+                                    <h4>Mental Game Workshop</h4>
+                                    <p class="event-date"><i class="fa-solid fa-calendar"></i> Monthly Sessions</p>
+                                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> Club Meeting Room</p>
+                                    <p>Learn mental, pressure management and visualization techniques,helping to improve your competitive performance.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="event-card">
+                                <img src="../Pictures/training 3.jpeg" alt="golf fitness program">
+                                <div class="event-content">
+                                    <h4>Golf Fitness Program</h4>
+                                    <p class="event-date"><i class="fa-solid fa-calendar"></i> Every Saturday</p>
+                                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> NYP Fitness Center</p>
+                                    <p>Specialized fitness training designed to improve flexibility, strength, and endurance for better golf performance.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- Leadership Training Section -->
+            <div class="event-category leadership-section" id="leadership">
+                <div class="container">
+                    <div class="category-header">
+                        <i class="fa-solid fa-users fa-3x"></i>
+                        <h2>Leadership Training</h2>
+                        <p>Develop leadership skills and take your personal growth to the next level</p>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="event-card">
+                                <img src="../Pictures/leadership 1.jpeg" alt="Leadership Excellence Workshop">
+                                <div class="event-content">
+                                    <h4>Leadership Excellence Workshop</h4>
+                                    <p class="event-date"><i class="fa-solid fa-calendar"></i> February 28 - March 1, 2025</p>
+                                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> NYP Conference Room</p>
+                                    <p>An intensive workshop covering communication and principles in golf.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="event-card">
+                                <img src="../Pictures/leadership 2.jpeg" alt="Peer Mentorship Program">
+                                <div class="event-content">
+                                    <h4>Peer Mentorship Program</h4>
+                                    <p class="event-date"><i class="fa-solid fa-calendar"></i> Ongoing Program</p>
+                                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> Various Locations</p>
+                                    <p>Senior members coaches juniors, developing leadership skills while fostering club community.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="event-card">
+                                <img src="../Pictures/leadership 3.jpeg" alt="Event Management Training">
+                                <div class="event-content">
+                                    <h4>Event Management Training</h4>
+                                    <p class="event-date"><i class="fa-solid fa-calendar"></i> May 15-16, 2025</p>
+                                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> NYP Multi-Purpose Hall</p>
+                                    <p>Learn to organize and manage golf events. ( applicable to certain roles only )</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <div>
+        <hr>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid p-0">
+        <div class="footer row m-0 p-2 pt-4">
+            <div class="footer-item col-12 col-md-6 col-lg-4 p-5 pt-0">
+                <img class="w-25 mb-2" src="../Pictures/logo.png" alt="NYP Golf Logo">
+                <p class="footer-contact px-2">NYP Golf Club -- Co-Curriculum Activity in Nanyang Polytechnic</p>
+                <p class="footer-contact px-2">Contact Number : +65 8673 1105</p>
+                <p class="footer-contact px-2">Email : 250367B@mymail.nyp.edu.sg</p>
+                <p class="footer-contact px-2">Location : 180 Ang Mo Kio Ave 8, Singapore 569830</p>
+            </div>
+            <div class="footer-item col-6 col-md-3 col-lg-2 text-center">
+                <p class="footer-headers fs-2 mb-4">Club</p>
+                <a href="https://www.nyp.edu.sg/main" target="_blank">
+                    <p>About NYP</p>
+                </a>
+                <a href="about.html">
+                    <p>Our Members</p>
+                </a>
+                <a href="event.html">
+                    <p>Offers</p>
+                </a>
+            </div>
+            <div class="footer-item col-6 col-md-3 col-lg-3 text-center">
+                <p class="footer-headers fs-2 mb-4">Partnerships</p>
+                <a href="https://www.pgatour.com/" target="_blank">
+                    <p>PGA Tour</p>
+                </a>
+                <a href="https://www.livgolf.com/" target="_blank">
+                    <p>LIV Golf</p>
+                </a>
+                <a href="https://www.taylormadegolf.com/" target="_blank">
+                    <p>Taylormade</p>
+                </a>
+                <a href="https://www.callawaygolf.com/" target="_blank">
+                    <p>Callaway</p>
+                </a>
+                <a href="https://www.footjoy.com.sg/" target="_blank">
+                    <p>FootJoy</p>
+                </a>
+            </div>
+            <div class="footer-item social col-12 col-lg-3 text-center">
+                <p class="footer-headers fs-2 mb-4">Connect with NYP</p>
+                <a href="https://www.linkedin.com/in/toh-yu-hui"><img src="../Pictures/facebook-app-symbol.png" alt="facebook-app-symbol"></a>
+                <a href="https://www.linkedin.com/in/toh-yu-hui"><img src="../Pictures/instagram.png" alt="instagram-app-symbol"></a>
+                <a href="https://www.linkedin.com/in/toh-yu-hui"><img src="../Pictures/linkedin.png" alt="linkedin-app-symbol"></a>
+                <a href="https://www.linkedin.com/in/toh-yu-hui"><img src="../Pictures/telegram.png" alt="telegram-app-symbol"></a>
+            </div>
+            <div class="statement col-12">
+                <hr class="mt-0">
+                <div class="statement-footer">
+                    <p class="copyright">Copyright &copy; 2025 NYP Golf, Singapore. All rights reserved.</p>
+                    <ul class="d-flex flex-wrap">
+                        <li>Privacy Statement</li>
+                        <li>Copyright & Disclaimer</li>
+                        <li>Report Vulnerability</li>
+                        <li>Sitemap</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () { // waits for the page to load finish
+                const navbar = document.getElementById("navbar");
+                let lastScrollTop = 0;                                  // stores the previous scroll position to 0 so that it can be compared with the position when scroll
+
+                window.addEventListener("scroll", function () {
+                    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+                    if (scrollTop > lastScrollTop) {                    // if the current scroll greater than the original --> scrolling down 
+                        const height = navbar.offsetHeight              // so the when user scrolls down, the navbar will go up thus negative pixels
+                        navbar.style.top = "-" + height + 'px';
+                        navbar.classList.remove("navbar-scrolled");
+                    } else {
+                        navbar.style.top = "0";                         // when it is equal 0, it means the user is scrolling up
+                        navbar.classList.add("navbar-scrolled");
+                    }
+
+                    if (scrollTop <= 10) {
+                        navbar.classList.remove("navbar-scrolled");
+                    }
+
+                    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;     // resets the last scroll top to 0 so that it can be compared again
+                });
+            });
+
+            document.addEventListener("DOMContentLoaded", function () {
+                    var loader = document.getElementById('preloader');
+                    window.addEventListener('load', function () {
+                        loader.style.display = 'none';
+                    })
+            })            
+    </script>
+    <script>
+            (function () {
+                // Check if chatbase is not already initialized
+                if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+
+                    // Temporary queue function to handle early calls to chatbase
+                    const chatbaseQueue = (...args) => {
+                        window.chatbase.q = window.chatbase.q || [];
+                        window.chatbase.q.push(args);
+                    };
+
+                    // Assign the temporary function to window.chatbase
+                    window.chatbase = new Proxy(chatbaseQueue, {
+                        get(target, prop) {
+                            if (prop === "q") {
+                                return target.q;
+                            }
+                            return (...args) => target(prop, ...args);
+                        }
+                    });
+                }
+
+                // Function to load the actual Chatbase embed script
+                function loadChatbaseScript() {
+                    const script = document.createElement("script");
+                    script.src = "https://www.chatbase.co/embed.min.js";
+                    script.id = "LVCqhOIGZtH0PFYWm30vR";  // Your chatbot ID
+                    script.domain = "www.chatbase.co";
+                    document.body.appendChild(script);
+                }
+
+                // Run the loader when the page is fully loaded
+                if (document.readyState === "complete") {
+                    loadChatbaseScript();
+                } else {
+                    window.addEventListener("load", loadChatbaseScript);
+                }
+            })();
+    </script>
+</body>
+</html>

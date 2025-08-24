@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission - NYP Golf</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+    crossorigin="anonymous"></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../CSS/admission.css">
+    <link rel="Icon" href="../Pictures/logo.png">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css"
+        integrity="sha512-v8QQ0YQ3H4K6Ic3PJkym91KoeNT5S3PnDKvqnwqFD1oiqIl653crGZplPdU5KKtHjO0QKcQ2aUlQZYjHczkmGw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <div id="preloader"></div>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img class="logo-image" src="../Pictures/logo.png" alt="NYP logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav fs-5 ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+                    <li class="nav-item"><a class="nav-link" href="event.html">EVENTS</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="admission.html">ADMISSION</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- background -->
+    <div class="container-fluid p-0">
+        <div class="bgd">
+            <div class="video-bg">
+                <video src="../Pictures/Golf course.mp4" type="video" autoplay playsinline loop muted ></video>
+            </div>
+            <div class="content">
+                <div class="admission">
+                    <div class="admission-header p-5 pb-2">
+                        <h1 class="text-center fw-semibold">Golf Club Admission</h1>
+                        <p class="fs-4 text-center">Join our prestigious club and tee off your journey to excellence</p>
+                    </div>
+                    <div class="ad">
+                        <form id="form" name="admission-form" action="" method="POST">
+                            <div class="box">
+                                <div class="name p-2">
+                                    <label for="name">Full Name</label><br>
+                                    <input class="mt-1" type="text" id="name" name="name" placeholder="John Doe" required/><br>
+                                </div>
+                                <div class="contact p-2">
+                                    <label for="phone">Contact Number</label><br>
+                                    <input class="mt-1" type="tel" name="phone" id="phone" placeholder="8 number" minlength="8" maxlength="8" required/><br>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <div class="email p-2">
+                                    <label for="email">Email </label><br>
+                                    <input class="mt-1" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Please enter a valid email address (e.g., example@gmail.com)" id="email" name="email" placeholder="example@gmail.com" type="email" required/><br>
+                                </div>
+                                <div class="year p-2">
+                                    <label for="year" class="year">Academic Year </label><br>
+                                    <select class="mt-1" name="academic" id="academic" required>
+                                        <option value="" disabled selected>Select your academic year</option>
+                                        <option value="PFP">PFP</option>
+                                        <option value="Year-1">Year 1</option>
+                                        <option value="Year-2">Year 2</option>
+                                        <option value="Year-3">Year 3</option>
+                                        <option value="Alumni">Alumni</option>
+                                    </select><br>
+                                </div>
+                            </div>
+                            
+                            <div class="box">
+                                <div class="school p-2">
+                                    <label for="school" class="school">School</label><br>
+                                    <select class="mt-1" name="school" id="school" required>
+                                        <option value="" disabled selected>Select your School</option>
+                                        <option value="Information Technology">School of Information Technology</option>
+                                        <option value="Business Management">School of Business Management</option>
+                                        <option value="Engineering">School of Engineering</option>
+                                        <option value="Applied Science">School of Applied Science</option>
+                                        <option value="Design and Media">School of Design and Media</option>
+                                        <option value="Health and Social Sciences">School of Health and Social Sciences</option>
+                                        <option value="N.A.">N.A. </option>
+                                    </select><br>
+                                </div>
+                                <div class="experience p-2">
+                                    <label for="experience" class="experience">Golf Experience</label><br>
+                                    <select class="mt-1" name="experience" id="experience" required>
+                                        <option value="" disabled selected>Select Experience</option>
+                                        <option value="Golf 101 Basics">Golf 101 Basics (Fundamentals of the Games)</option>
+                                        <option value="Driving Range">Driving Range (Developing Distance & Swing)</option>
+                                        <option value="Short Games">Short Game (Focus on improving the score)</option>
+                                        <option value="Professional">Professional (Competitive Golfing)</option>
+                                    </select><br>
+                                </div>
+                            </div>
+                            
+                            <div class="box">
+                                <div class="handicap p-2">
+                                    <label for="handicap" class="handicap">Golf Handicap (If applicable)</label><br>
+                                    <input class="mt-1" type="number" id="handicap" name="handicap" max="54" min="0" step="1"/><br>
+                                </div>
+                            </div>
+                            
+                            <div class="box">
+                                <div class="why p-2">
+                                    <label for="why" class="why">Why do you want to join our NYP Golf Club?</label><br>
+                                    <textarea class="mt-1" name="reason" id="reason"
+                                        placeholder="Write a short 50 characters to talk about your hope for joining in our NYP Golf Club" minlength="50" required></textarea><br>
+                                </div>
+                            </div>
+                            
+                            <div class="box mb-3">
+                                <div class="allergies p-2">
+                                    <label for="allergies" class="medical">Medical Conditions and Allergies (Optional)</label><br>
+                                    <textarea class="mt-1" name="medical" id="allergies" placeholder="Please list any medical conditions, allergies or any physical limitations we should be aware of. Leave blank if none"></textarea><br>
+                                </div>
+                            </div>
+
+                            <div class="tick">
+                                <div class="agreement mt-0 p-2">
+                                    <input type="checkbox" id="agree" name="agree" class="checkbox" required/>
+                                    <label class="terms" for="agree">I agree to commit to the full academic year and understand that CCA
+                                        membership requires regular attendance and participation</label><br>
+                                </div>
+                            </div>
+                            <div class="tick mb-4">
+                                <div class="waiver p-2">
+                                    <input type="checkbox" id="waiver" name="waiver" class="checkbox" required/>
+                                    <label class="terms" for="waiver">I acknowledge that golf involves physical activity and accept
+                                    responsibility for any risks involved</label><br>
+                                </div>
+                            </div>
+                            <div class="submit-button p-0">
+                                <button type="submit" id="submit" class="submit" value="submit" onclick="Submit()"><span id="word">Submit</span>
+                                    <div class="text-center">
+                                        <div class="spinner-border" role="status" id="loading">
+                                            <span class="visually-hidden">Loading...</span>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function adjustHeroPadding() {
+            const navbar = document.querySelector(".navbar");
+            const heroContent = document.querySelector(".content");
+            if (navbar && heroContent) {
+                const height = navbar.offsetHeight;             // Gets the height of the navbar
+                console.log("Navbar height:", height);          // prints the height in the console for confirmation
+                const newHeight = height + 30;                  // subtract 20px to align the elements better
+                heroContent.style.paddingTop = newHeight + "px";// now the padding top will be the new height so that the word does not hide underneath the navbar
+            }
+        }
+        window.addEventListener("load", adjustHeroPadding);     // when the page load the padding is adjusted 
+        window.addEventListener("resize", adjustHeroPadding);
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyq4xKFD7_HZP66f1A_IRYXju-NA50m-lyikF6I8Bx0orCtiBSiblPT7trghzB6-U7XLg/exec'  // data is send to this script (sheet)
+        const form = document.forms['admission-form']                                                                                           // looking for name admission form
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })                                                                      // handle the javascript using fetch
+                .then(Response => alert('Thank You ! Your form has been submitted successfully !'))
+                .then(() => { window.location.reload(); })
+                .catch(error => console.error('Error!', error.message))
+        })
+        
+        var loading = document.getElementById('loading');
+        var word = document.getElementById('word');
+        var submitBut = document.getElementById('submit');
+        const admission = document.querySelector('#form')
+
+        function Submit() {
+            if (admission.checkValidity()) {
+                word.style.display = 'none';
+                loading.style.display = 'flex';
+                submitBut.style.pointerEvents = 'none'
+            }
+            else {}
+        }
+
+        document.addEventListener("DOMContentLoaded", function () { // waits for the page to load finish
+            const navbar = document.getElementById("navbar");
+            let lastScrollTop = 0;                                  // stores the previous scroll position to 0 so that it can be compared with the position when scroll
+
+            window.addEventListener("scroll", function () {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+                if (scrollTop > lastScrollTop) {                    // if the current scroll greater than the original --> scrolling down 
+                    const height = navbar.offsetHeight              // so the when user scrolls down, the navbar will go up thus negative pixels
+                    navbar.style.top = "-" + height + 'px';
+                    navbar.classList.remove("navbar-scrolled");
+                } else {
+                    navbar.style.top = "0";                         // when it is equal 0, it means the user is scrolling up
+                    navbar.classList.add("navbar-scrolled");
+                }
+
+                if (scrollTop <= 10) {
+                    navbar.classList.remove("navbar-scrolled");
+                }
+
+                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;     // resets the last scroll top to 0 so that it can be compared again
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var loader = document.getElementById('preloader');
+            window.addEventListener('load', function () {
+                loader.style.display = 'none';
+            })
+        })
+
+        </script>
+    <script>
+        (function () {
+                // Check if chatbase is not already initialized
+                if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+
+                    // Temporary queue function to handle early calls to chatbase
+                    const chatbaseQueue = (...args) => {
+                        window.chatbase.q = window.chatbase.q || [];
+                        window.chatbase.q.push(args);
+                    };
+
+                    // Assign the temporary function to window.chatbase
+                    window.chatbase = new Proxy(chatbaseQueue, {
+                        get(target, prop) {
+                            if (prop === "q") {
+                                return target.q;
+                            }
+                            return (...args) => target(prop, ...args);
+                        }
+                    });
+                }
+
+                // Function to load the actual Chatbase embed script
+                function loadChatbaseScript() {
+                    const script = document.createElement("script");
+                    script.src = "https://www.chatbase.co/embed.min.js";
+                    script.id = "LVCqhOIGZtH0PFYWm30vR";  // Your chatbot ID
+                    script.domain = "www.chatbase.co";
+                    document.body.appendChild(script);
+                }
+
+                // Run the loader when the page is fully loaded
+                if (document.readyState === "complete") {
+                    loadChatbaseScript();
+                } else {
+                    window.addEventListener("load", loadChatbaseScript);
+                }
+            })();
+    </script>
+    <iframe width="951" height="405" src="https://www.youtube.com/embed/MW79zgnSF40?list=RDMW79zgnSF40" title="J.Tajor - Like I Do (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="951" height="405" src="https://www.youtube.com/embed/MW79zgnSF40?list=RDMW79zgnSF40" title="J.Tajor - Like I Do (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="951" height="405" src="https://www.youtube.com/embed/MW79zgnSF40?list=RDMW79zgnSF40" title="J.Tajor - Like I Do (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="951" height="405" src="https://www.youtube.com/embed/MW79zgnSF40?list=RDMW79zgnSF40" title="J.Tajor - Like I Do (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="951" height="405" src="https://www.youtube.com/embed/MW79zgnSF40?list=RDMW79zgnSF40" title="J.Tajor - Like I Do (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="951" height="405" src="https://www.youtube.com/embed/MW79zgnSF40?list=RDMW79zgnSF40" title="J.Tajor - Like I Do (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="951" height="405" src="https://www.youtube.com/embed/MW79zgnSF40?list=RDMW79zgnSF40" title="J.Tajor - Like I Do (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="951" height="405" src="https://www.youtube.com/embed/MW79zgnSF40?list=RDMW79zgnSF40" title="J.Tajor - Like I Do (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="951" height="405" src="https://www.youtube.com/embed/MW79zgnSF40?list=RDMW79zgnSF40" title="J.Tajor - Like I Do (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="951" height="405" src="https://www.youtube.com/embed/MW79zgnSF40?list=RDMW79zgnSF40" title="J.Tajor - Like I Do (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="951" height="405" src="https://www.youtube.com/embed/MW79zgnSF40?list=RDMW79zgnSF40" title="J.Tajor - Like I Do (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="951" height="405" src="https://www.youtube.com/embed/MW79zgnSF40?list=RDMW79zgnSF40" title="J.Tajor - Like I Do (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="951" height="405" src="https://www.youtube.com/embed/MW79zgnSF40?list=RDMW79zgnSF40" title="J.Tajor - Like I Do (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="951" height="405" src="https://www.youtube.com/embed/MW79zgnSF40?list=RDMW79zgnSF40" title="J.Tajor - Like I Do (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="951" height="405" src="https://www.youtube.com/embed/MW79zgnSF40?list=RDMW79zgnSF40" title="J.Tajor - Like I Do (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="951" height="405" src="https://www.youtube.com/embed/MW79zgnSF40?list=RDMW79zgnSF40" title="J.Tajor - Like I Do (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+</html>
