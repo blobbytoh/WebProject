@@ -1,0 +1,379 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Winky Rough';
+    overflow-x: hidden;
+    background-image: url('../Pictures/about\ wallpaper.jpg');
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+#preloader {
+    background: #08ba6d url('../Pictures/golf.gif') no-repeat;
+    inset: 0;
+    background-position: center;
+    background-size: 40%;
+    height: 110vh;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+}
+
+/* Navigation Bar */
+.navbar{
+    background-color: transparent;
+    transition: 300ms ease-in-out;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.navbar-scrolled{
+    background-color: #6dada5;
+}
+
+.navbar:hover{
+    background-color: #6dada5;
+    transition-duration: 250ms;
+}
+
+.navbar .nav-item .nav-link{
+    color: white !important;
+}
+
+.nav-item:hover > .nav-link:not(.active) {
+    background-color: #0CA58C;
+}
+
+.logo-image{
+    height: 11vh;
+}
+
+.nav-item .nav-link.active {
+  text-decoration: underline 5px white !important;
+  text-underline-offset: 8px !important;
+  color: white !important;
+  user-select: none;
+}
+
+/* About Us Content */
+.about-section {
+    position: relative;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('../about wallpaper.jpg');
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 120px 0 80px;
+}
+
+.content-header {
+    text-align: center;
+    color: white;
+    margin-bottom: 80px;
+    padding: 0 20px;
+}
+
+.line-1{
+    position: relative;
+    top: 50%;  
+    max-width: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    white-space: pre-wrap;
+    overflow: hidden;
+    font-size: 1.8em;
+}
+
+/* Animation */
+.anim-typewriter{
+    animation: typewriter 4s steps(48, end) 1s 1 normal both, blinkTextCursor 1s steps(48, end) infinite normal;
+    display: inline-block;
+    justify-content: center;
+    white-space: pre-wrap;
+    border-right: 2px solid rgba(255,255,255,.75);
+}
+@keyframes typewriter {
+    from { clip-path: inset(0 100% 0 0); }
+    to { clip-path: inset(0 0 0 0); }
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+/* History Section */
+.history-section {
+    background-color: white;
+    padding: 60px 0;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.history-content h2 {
+    font-size: 2.5rem;
+    color: #3A506B;
+    margin-bottom: 30px;
+}
+
+.history-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Fixed height images for consistency */
+.instructor-image,
+.team-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.instructor-image img,
+.team-image img {
+    object-fit: cover;
+    min-height: 300px;
+}
+
+/* Vision & Mission Section */
+.vision-mission-section {
+    padding: 60px 0;
+    background-color: #6dada5;
+}
+
+.vm-box {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.vm-box:hover {
+    transform: translateY(-5px);
+}
+
+.vm-box i {
+    color: #6dada5;
+}
+
+.vm-box h3 {
+    font-size: 2rem;
+    color: #3A506B;
+    margin-bottom: 20px;
+}
+
+.vm-box p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;
+}
+
+/* Instructors Section */
+.instructors-section {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.section-header h2 {
+    font-size: 2.8rem;
+    color: #3A506B;
+    margin-bottom: 15px;
+}
+
+.section-header p {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+.instructor-card {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    padding: 30px;
+}
+
+.instructor-card:hover {
+    transform: translateY(-5px);
+}
+
+.instructor-card h4 {
+    font-size: 1.5rem;
+    color: #3A506B;
+    margin-bottom: 10px;
+}
+
+.instructor-card .role {
+    font-size: 1.1rem;
+    color: #6dada5;
+    margin-bottom: 15px;
+}
+
+.instructor-card .credentials {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Goals Section */
+.goals-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.goals-header h2 {
+    font-size: 2.8rem;
+    color: #3A506B;
+}
+
+.goal-item {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.goal-item:hover {
+    transform: translateY(-5px);
+}
+
+.goal-item i {
+    color: #6dada5;
+}
+
+.goal-item h4 {
+    font-size: 1.4rem;
+    color: #3A506B;
+    margin-bottom: 15px;
+}
+
+.goal-item p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Team Section */
+.team-section {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.team-member {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    padding: 30px;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member h5 {
+    font-size: 1.3rem;
+    color: #3A506B;
+    margin-bottom: 8px;
+}
+
+.team-member .position {
+    font-size: 1rem;
+    color: #6dada5;
+    margin-bottom: 15px;
+}
+
+.team-member .description p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* footer */
+.footer{
+    min-height: 50vh;
+    background-color: #1e1c1c;
+}
+
+.footer-item{
+    color: white;
+    height: 38vh;
+}
+
+.footer-item a{
+    text-decoration: none;
+    color: rgb(156, 156, 156);
+}
+
+.footer-item a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.social img{
+    width: 11%;
+    margin-right: 1vw;
+}
+
+.footer-headers{
+    position: relative;
+}
+
+.footer-headers::before{
+    content: '';
+    position: absolute;
+    background-color: #6dada5;
+    height: 5px;
+    width: 3vw;
+    bottom: 0;
+    border-radius: 10px;
+}
+
+.statement{
+    color: rgb(143, 143, 143);
+}
+
+.statement-footer li{
+    list-style-type: none;
+    display: inline-flex;
+    margin-left: 10px;
+}
+
+.statement-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.copyright{
+    width: max-content;
+}
+
+.statement-footer li:hover{
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+
+.footer-contact{
+    font-size: clamp(0.5em, 3vw, 1em);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .history-content h2,
+    .goals-header h2,
+    .section-header h2 {
+        font-size: 2rem;
+    }
+}
